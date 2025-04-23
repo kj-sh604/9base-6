@@ -2,6 +2,9 @@
 
 include config.mk
 
+CFLAGS += -fcommon -Wno-implicit-function-declaration
+export CFLAGS
+
 SUBDIRS  = lib9\
 	yacc\
 	ascii\

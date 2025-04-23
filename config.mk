@@ -12,7 +12,6 @@ OBJTYPE     = 386
 # Linux/BSD
 #CFLAGS      += -Wall -Wno-missing-braces -Wno-parentheses -Wno-switch -c -I. -DPREFIX="\"${PREFIX}\""
 CFLAGS      += -c -I. -DPREFIX="\"${PREFIX}\""
-LDFLAGS     += -static
 
 # Solaris
 #CFLAGS      = -fast -xtarget=ultra -D__sun__ -c -I. -DPREFIX="\"${PREFIX}\""

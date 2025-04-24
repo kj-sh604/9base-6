@@ -2,6 +2,8 @@
 
 include config.mk
 
+SHELL := $(shell which bash)
+
 CFLAGS += -fcommon -Wno-implicit-function-declaration
 export CFLAGS
 
@@ -58,6 +60,7 @@ SUBDIRS  = lib9\
 	unutf\
 
 all:
+	@echo "SHELL:" ${SHELL}
 	@echo 9base build options:
 	@echo "CFLAGS   = ${CFLAGS}"
 	@echo "LDFLAGS  = ${LDFLAGS}"

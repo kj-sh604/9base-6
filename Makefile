@@ -60,8 +60,8 @@ SUBDIRS  = lib9\
 	unutf\
 
 all:
-	@echo "SHELL:" ${SHELL}
 	@echo 9base build options:
+	@echo "SHELL    = ${SHELL}"
 	@echo "CFLAGS   = ${CFLAGS}"
 	@echo "LDFLAGS  = ${LDFLAGS}"
 	@echo "CC       = ${CC}"
